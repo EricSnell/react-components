@@ -86,9 +86,11 @@
 	            React.createElement(
 	                'div',
 	                { className: 'person-name' },
-	                this.props.name
+	                this.props.name,
+	                ' onClick=',
+	                this.onClick
 	            ),
-	            React.createElement('img', { className: 'person-img', src: this.props.imageUrl, onClick: this.onClick }),
+	            React.createElement('img', { className: 'person-img', src: this.props.imageUrl }),
 	            React.createElement(
 	                'div',
 	                { className: 'person-job' },
